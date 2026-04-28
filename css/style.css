@@ -1,0 +1,386 @@
+    /* Justify-Content = Centro horizontal */
+    /* align-itens = Centro Vertical */
+    /* padding = margem interna */
+    /* margin = margem externa */
+    /* width = largura */
+    /* height = altura */
+    /* display: flex = transforma esse elemento em um container flexível, e todos os filhos dele viram itens flex */
+    /* margin: 20px auto; */
+    /* display: block = ocupa a linha inteira */
+    /* header a:hover = ao passar o mouse no link ele muda a cor*/
+
+
+    /* __________________________________________________________________________________________*/
+    /* Página de INÍCIO*/
+    /* __________________________________________________________________________________________*/
+
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    /* Sections padronizadas */
+    section {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    section h1 {
+        margin-bottom: 15px;
+    }
+
+    /* HEADER */
+    .header {
+
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding: 20px 50px;
+
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        color: white;
+        background-color: #022949;
+    }
+
+    header ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header ul li {
+        margin-left: 20px;
+    }
+
+    header a {
+
+        margin-right: 16px;
+        font-size: 15px;
+
+        text-decoration: none;
+        color: white;
+    }
+
+    header a:hover {
+        color: #00bfff;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    /* Imagem de Inicio*/
+    .inicio {
+        height: 400px;
+        border-radius: 16px;
+
+        background: url(./img/wallpaperbetter.jpg) center/cover no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        color: white;
+    }
+
+    .inicio h1 {
+        text-shadow: 2px 2px 4px #000;
+        margin-bottom: 10px;
+    }
+
+    .inicio p {
+        font-size: 18px;
+        text-shadow: 1px 1px 3px #000;
+    }
+
+    /* SERVIÇOS */
+    .servicos ul {
+        padding-left: 20px;
+    }
+
+    .servicos li {
+        margin-bottom: 8px;
+    }
+
+    /* TABELA */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        background: white;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background: #022949;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background: #f2f2f2;
+    }
+
+    /* VÍDEO */
+
+    .video h1 {
+        text-align: center;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 450px;
+        border-radius: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #022949;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    /* __________________________________________________________________________________________*/
+    /* Página de DESTINOS*/
+    /* __________________________________________________________________________________________*/
+
+    /* Filtros + Produtos */
+
+    .destinos {
+        background-color: #ebebeb;
+    }
+
+    .procura {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .filtros {
+        justify-content: center;
+    }
+
+    .filtros label {
+        margin-top: 20px;
+    }
+
+    .produtos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px auto;
+        text-align: center;
+    }
+
+    .produtos img {
+        width: 400px;
+        height: 300px;
+        border-radius: 16px;
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .produtos h1 {
+        margin: 20px;
+    }
+
+    .produtos h2 {
+        color: rgb(250, 122, 3);
+    }
+
+    .categoria1,
+    .categoria2,
+    .categoria3 {
+        
+        box-shadow: 7px 7px 12px 0 rgba(50, 50, 50, 0.22);
+        margin-left: 20px;
+
+        border-radius: 16px;
+        border-left: 1px solid #d2d2d2;
+        border-top: 1px solid #d2d2d2;
+
+        background-color: #ffffff;
+        padding-bottom: 30px;
+
+        transition: all 0.3s ease-out;
+    }
+
+    .categoria1:hover,.categoria2:hover,.categoria3:hover{
+        transform: translateY(-5px);
+        cursor:pointer;
+    }
+
+    .filtros {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .filtros label {
+        background: #f1f1f1;
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .containerFormulario button {
+        margin-top: 20px;
+        margin: 20px auto;
+        margin-left: 25%;
+        padding: 12px;
+        width: 200px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    /* Formulário */
+
+    .containerFormulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .form-box {
+        background: #fff;
+        padding: 30px;
+        width: 500px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-box h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #000000;
+        outline: none;
+        font-size: 14px;
+    }
+
+    form textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    .login {
+        margin-top: 20px;
+        padding: 12px;
+        width: 200px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+
+    form button:hover {
+        background-color: #179fdf;
+    }
+
+
+
+    /* __________________________________________________________________________________________*/
+    /* Página de LOGIN*/
+    /* __________________________________________________________________________________________*/
+
+    .sistemaLogin {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 130px auto;
+    }
+
+    .loginEntrar {
+        margin-top: 30px;
+    }
+
+    .cadastrar {
+        margin-top: 20px;
+        padding: 12px;
+        margin-left: 33px;
+        width: 200px;
+        background-color: #a73728;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+
+    /* __________________________________________________________________________________________*/
+    /* Página de Cadastro*/
+    /* __________________________________________________________________________________________*/
+
+    .enviarCadastro {
+        margin-top: 20px;
+        margin-left: 30%;
+        padding: 12px;
+        width: 200px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .form-box h2 {
+        text-align: center;
+    }

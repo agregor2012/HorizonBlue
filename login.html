@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <nav>
+            <ul> <!--Menu de navegação-->
+                <li><a href="./cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="sistemaLogin">
+            <div class="form-box">
+                <h2>Entre com sua conta:</h2>
+
+                <form>
+                    <label>Login:</label>
+                    <input type="text" placeholder="e-mail" id="login">
+
+                    <label>Senha:</label>
+                    <input type="password" placeholder="senha" id="senha">
+
+                    <button type="submit" class="login" onclick="logar(); return false">Entrar</button>
+                    <button type="button" class="cadastrar" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

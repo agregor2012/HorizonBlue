@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="destinos">
+
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <nav>
+            <ul> <!--Menu de navegação-->
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <h1 class="procura"> O que você procura?</h1>
+        <div class="containerDestino"></div>
+
+        <div class="filtros">
+            <label>
+                <input type="checkbox" id="filtro1"> Praia
+            </label>
+            <label>
+                <input type="checkbox" id="filtro2"> Montanha
+            </label>
+            <label>
+                <input type="checkbox" id="filtro3"> Neve
+            </label>
+        </div>
+
+
+        <div class="produtos">
+
+            <div class="categoria1">
+                <img src="./img/copacabana.jpg">
+                <h1>Copacabana, RJ</h1>
+                <h2>Clima</h2>
+                <p>Tropical</p>
+                <h2>Moeda</h2>
+                <p>Real (BRL)</p>
+                <h2>Idioma Local</h2>
+                <p>Português</p>
+            </div>
+
+            <div class="categoria2">
+
+                <img src="./img/peru.jpg">
+                <h1>Machu Picchu, Peru</h1>
+                <h2>Clima</h2>
+                <p>Temperado</p>
+                <h2>Moeda</h2>
+                <p>Soles (PEN)</p>
+                <h2>Idioma Local</h2>
+                <p>Espanhol</p>
+            </div>
+
+            <div class="categoria3">
+                <img src="./img/alpes.jpg">
+                <h1>Alpes Suiços, Europa</h1>
+                <h2>Clima</h2>
+                <p>Temperado</p>
+                <h2>Moeda</h2>
+                <p>Franco Suiço (CHF)</p>
+                <h2>Idioma Local</h2>
+                <p>Alemão</p>
+            </div>
+
+        </div>
+
+        <div class="containerFormulario">
+            <div class="form-box">
+                <h2>Solicite seu Orçamento</h2>
+
+                <form>
+                    <label>Nome Completo:</label>
+                    <input type="text" placeholder="Ex: João Silva" id="preenchimento1">
+
+                    <label>E-mail de Contato:</label>
+                    <input type="email" placeholder="exemplo@email.com" id="preenchimento2">
+
+                    <label>Data Desejada:</label>
+                    <input type="date" id="preenchimento3">
+
+                    <label>Detalhes da Viagem:</label>
+                    <textarea type="detalhes" placeholder="Conte-nos sobre seus planos..."></textarea>
+
+                    <button type="button" onclick="orcamento()">Enviar Solicitação</button>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizon Blue - Viagens & Turismo </p>
+        <p> Contato: (11) 9999-9999 | contato@horizonteblue.com.br </p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

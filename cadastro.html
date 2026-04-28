@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <nav>
+            <ul> <!--Menu de navegação-->
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="containerFormulario">
+            <div class="form-box">
+                <h2>Preencha o Formulário</h2>
+
+                <form>
+                    <label>Nome Completo:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label>E-mail de Contato:</label>
+                    <input type="e-mail" id="emailNovo">
+
+                    <label>CEP:</label>
+                    <input type="cep" id="cep" onblur="buscarCep()">
+
+                    <label>Rua:</label>
+                    <input type="text" name="rua" id="rua">
+
+                    <label>Bairro:</label>
+                    <input type="text" name="bairro" id="bairro">
+
+                    <label>Cidade:</label>
+                    <input type="cidade" id="cidade">
+                    
+                    <label>Estado:</label>
+                    <input type="estado" id="estado">
+
+                    <label>Senha:</label>
+                    <input type="password" id="senhaNovo">
+
+                    <button type="button" onclick="enviarCadastro()">Enviar Dados</button>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizon Blue - Viagens & Turismo </p>
+        <p> Contato: (11) 9999-9999 | contato@horizonteblue.com.br </p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
